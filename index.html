@@ -1250,11 +1250,9 @@ function openSlideshow(category, name) {
   updateSlide(false);
   document.getElementById('modalOverlay').classList.add('open');
   document.body.style.overflow='hidden';
-  startAutoSlideshow();
 }
 
 function closeSlideshow() {
-  stopAutoSlideshow();
   document.getElementById('modalOverlay').classList.remove('open');
   document.body.style.overflow='';
 }
