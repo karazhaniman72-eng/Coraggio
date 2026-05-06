@@ -1242,18 +1242,6 @@ hamburger.addEventListener('click',()=>{
 //  Пример: suits1.jpg, suits_2.jpg ... suits_6.jpg
 // ══════════════════════════════════════════
 let slideCategory='', slideName='', slideIndex=0, slideTotal=10;
-let slideTimer = null;
-let isSliding = false;
-
-function startAutoSlideshow() {
-  stopAutoSlideshow();
-  slideTimer = setInterval(() => changeSlide(1), 2600);
-}
-
-function stopAutoSlideshow() {
-  if (slideTimer) clearInterval(slideTimer);
-  slideTimer = null;
-}
 
 function openSlideshow(category, name) {
   slideCategory = category;
